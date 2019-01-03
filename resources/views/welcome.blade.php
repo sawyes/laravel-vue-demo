@@ -47,8 +47,8 @@
             <div id="menu" class="box flex align-center justify-center">
                 <div></div>
                 <div class="content flex font-blue ">
-                    <a href="#/">home</a>
-                    <a href="#/about">about</a>
+                    <router-link to="/">Home</router-link>
+                    <router-link to="/about">About</router-link>
                 </div>
             </div>
             <router-view></router-view>
