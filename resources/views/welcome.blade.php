@@ -11,25 +11,45 @@
 
         <link rel="stylesheet" type="text/css" href="/css/app.css">
         <style>
-            .box {
+            .flex {
                 display: -webkit-flex; /* Safari */
                 display: flex;
+            }
+            .align-center {
+                align-items: center;
+            }
+            .justify-center {
+                justify-content: center;
+            }
+            .box {
                 width: 100%;
                 background: #1b4b72;
                 margin-bottom: 10px;
             }
-            #menu a{
+            .font-blue {
+                color: rgba(54, 144, 220, 0.5);
+            }
+            .font-blue a:hover {
+                color: #6cb2eb;
+            }
+            .box a{
                 padding: 10px;
                 border: 1px solid #0c5460;
                 text-decoration: none;
+            }
+            .content {
+                width: 1140px;
             }
         </style>
     </head>
     <body>
         <div id="app">
-            <div id="menu" class="box">
-                <a href="#/">home</a>
-                <a href="#/about">about</a>
+            <div id="menu" class="box flex align-center justify-center">
+                <div></div>
+                <div class="content flex font-blue ">
+                    <a href="#/">home</a>
+                    <a href="#/about">about</a>
+                </div>
             </div>
             <router-view></router-view>
         </div>
