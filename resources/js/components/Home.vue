@@ -6,7 +6,13 @@
                     <div class="card-header">Home Component</div>
 
                     <div class="card-body">
-                        this is about page
+                        <div v-for="post in posts" :key="post.id">
+                            <div class="title">
+
+                                <router-link :to="{ name: 'posts', params: {id: post.id} }">{{ post.title }}</router-link>
+                            </div>
+                            <div class="body">{{ post.body }}</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -17,7 +23,14 @@
 <script>
     export default {
         mounted() {
-            console.log('Home Component mounted.')
+            axios.get('/api/posts').then(response=>{
+                this.posts = response.data.data;
+            });
+        },
+        data() {
+            return {
+                posts: []
+            }
         }
     }
 </script>

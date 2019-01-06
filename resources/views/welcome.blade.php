@@ -9,7 +9,7 @@
         {{-- @doc https://www.wubian.top/docs/5.5/csrf#csrf-x-csrf-token--}}
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <link rel="stylesheet" type="text/css" href="/css/app.css">
+        <link rel="stylesheet" type="text/css" href="{{ mix('/css/app.css') }}">
         <style>
             .flex {
                 display: -webkit-flex; /* Safari */
@@ -54,5 +54,5 @@
             <router-view></router-view>
         </div>
     </body>
-<script src="/js/app.js"></script>
+<script src="{{ mix('/js/app.js') }}"></script>
 </html>
