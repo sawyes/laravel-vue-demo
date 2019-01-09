@@ -14,8 +14,11 @@ import VueRouter from 'vue-router'
 // 导入自定义的routes文件
 import router from './routes'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
+//// 注册app组件
+import App from './components/App'
+Vue.component('App', App);
 
 /**
  * The following block of code may be used to automatically register your

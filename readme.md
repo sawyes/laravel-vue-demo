@@ -33,7 +33,12 @@
         - webpack verson
         - axios 获取数据
         - post.vue
-
+- [x] 重构 Vue 组件目录
+    - 重构`Home.vue`
+    - 重构导航
+    - 新增app.vue
+    - 注册Vue组件
+    - 重构样式
 
 ## 技术栈
 

@@ -1,0 +1,29 @@
+.flex {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.box {
+    width: 100%;
+    background: #1b4b72;
+    margin-bottom: 10px;
+}
+.font-blue {
+    color: rgba(54, 144, 220, 0.5);
+}
+.font-blue a:hover {
+    color: #6cb2eb;
+}
+.box a{
+    padding: 10px;
+    border: 1px solid #0c5460;
+    text-decoration: none;
+}
+.content {
+    width: 1140px;
+}
