@@ -21,9 +21,19 @@
     - 动态打包npm run watch
     - vue-router 添加第二条路由
     - 完全移交laravel web 路由到vue
-- [x] lession-1-与后端交互
+- [x] lession-2-与后端交互
     - Mock文章数据
+        - model post create
+        - schema-post
+        - factory post
+        - seeder post
     - 后端交互
+        - controller post
+        - router post
+        - webpack verson
+        - axios 获取数据
+        - post.vue
+
 
 ## 技术栈
 
